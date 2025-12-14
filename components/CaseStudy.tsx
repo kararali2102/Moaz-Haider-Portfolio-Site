@@ -15,7 +15,7 @@ export default function CaseStudy() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-dark-950 relative overflow-hidden">
+    <section ref={ref} className="section-padding bg-background-light dark:bg-background-darker relative overflow-hidden">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-r from-dark-950 via-transparent to-dark-950" />
@@ -52,9 +52,9 @@ export default function CaseStudy() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold font-heading text-white">The Challenge</h3>
+                <h3 className="text-2xl font-bold font-heading text-text-primary-light dark:text-text-primary-dark">The Challenge</h3>
               </div>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
                 Modern Kitchen Co., a premium remodeling business, was struggling with low online visibility. 
                 Despite having stunning project work, they weren't ranking for key kitchen remodeling terms 
                 and were losing leads to competitors with inferior services.
@@ -69,7 +69,7 @@ export default function CaseStudy() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold font-heading text-white">Our Strategy</h3>
+                <h3 className="text-2xl font-bold font-heading text-text-primary-light dark:text-text-primary-dark">Our Strategy</h3>
               </div>
               <ul className="space-y-3">
                 {[
@@ -80,30 +80,30 @@ export default function CaseStudy() {
                   'White-hat link building from home design publications',
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-primary-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-primary-600 dark:text-primary-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-gray-300">{item}</span>
+                    <span className="text-text-secondary-light dark:text-text-secondary-dark">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Testimonial */}
-            <div className="bg-dark-800 border border-dark-700 rounded-xl p-6">
+            <div className="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl p-6">
               <div className="flex items-start space-x-4">
-                <svg className="w-8 h-8 text-primary-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-primary-600 dark:text-primary-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
                 <div>
-                  <p className="text-gray-300 italic mb-4">
+                  <p className="text-text-secondary-light dark:text-text-secondary-dark italic mb-4">
                     "Working with Moaz completely transformed our online presence. We went from invisible to dominating 
                     our local market. The quality of leads increased dramatically, and we're now booking consultations 
                     2-3 months out."
                   </p>
                   <div>
-                    <p className="font-bold text-white">Sarah Mitchell</p>
-                    <p className="text-sm text-gray-400">Owner, Modern Kitchen Co.</p>
+                    <p className="font-bold text-text-primary-light dark:text-text-primary-dark">Sarah Mitchell</p>
+                    <p className="text-sm text-text-muted-light dark:text-text-muted-dark">Owner, Modern Kitchen Co.</p>
                   </div>
                 </div>
               </div>
@@ -134,19 +134,19 @@ export default function CaseStudy() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.5, delay: 0.3 + idx * 0.1 }}
-                    className="bg-dark-900/50 backdrop-blur rounded-xl p-6 border border-dark-700"
+                    className="bg-surface-light/50 dark:bg-surface-darker/50 backdrop-blur rounded-xl p-6 border border-border-light dark:border-border-dark"
                   >
                     <div className="text-5xl font-bold font-heading text-gradient mb-2">
                       {result.value}
                     </div>
-                    <div className="text-gray-300 text-lg">{result.label}</div>
+                    <div className="text-text-secondary-light dark:text-text-secondary-dark text-lg">{result.label}</div>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-dark-700">
-                <p className="text-gray-400 text-sm mb-4">
-                  <strong className="text-white">Timeline:</strong> Results achieved in 6 months
+              <div className="mt-8 pt-6 border-t border-border-light dark:border-border-dark">
+                <p className="text-text-secondary-light dark:text-text-secondary-dark text-sm mb-4">
+                  <strong className="text-text-primary-light dark:text-text-primary-dark">Timeline:</strong> Results achieved in 6 months
                 </p>
                 <motion.a
                   href="/case-studies"

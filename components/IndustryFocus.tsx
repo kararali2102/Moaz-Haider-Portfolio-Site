@@ -41,7 +41,7 @@ export default function IndustryFocus() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-dark-900">
+    <section ref={ref} className="section-padding bg-background-light dark:bg-background-dark">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -70,10 +70,10 @@ export default function IndustryFocus() {
               <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 {type.icon}
               </div>
-              <h3 className="text-xl font-bold font-heading mb-2 text-white">
+              <h3 className="text-xl font-bold font-heading mb-2 text-text-primary-light dark:text-text-primary-dark">
                 {type.title}
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-text-secondary-light dark:text-text-secondary-dark text-sm leading-relaxed">
                 {type.description}
               </p>
             </motion.div>
@@ -89,10 +89,10 @@ export default function IndustryFocus() {
         >
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold font-heading mb-4 text-white">
+              <h3 className="text-3xl font-bold font-heading mb-4 text-text-primary-light dark:text-text-primary-dark">
                 What You'll <span className="text-gradient">Achieve</span>
               </h3>
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <p className="text-text-secondary-light dark:text-text-secondary-dark mb-6 leading-relaxed">
                 My specialized approach to kitchen remodeling SEO delivers tangible business outcomes 
                 that directly impact your bottom line.
               </p>
@@ -113,12 +113,12 @@ export default function IndustryFocus() {
                   initial={{ opacity: 0, x: 30 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.5 + idx * 0.05 }}
-                  className="flex items-start space-x-3 bg-dark-800/50 backdrop-blur rounded-lg p-4"
+                  className="flex items-start space-x-3 bg-surface-light/50 dark:bg-surface-dark/50 backdrop-blur rounded-lg p-4"
                 >
-                  <svg className="w-6 h-6 text-primary-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary-600 dark:text-primary-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-300">{benefit}</span>
+                  <span className="text-text-secondary-light dark:text-text-secondary-dark">{benefit}</span>
                 </motion.div>
               ))}
             </div>

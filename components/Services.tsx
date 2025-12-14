@@ -74,7 +74,7 @@ export default function Services() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-dark-950">
+    <section ref={ref} className="section-padding bg-background-light dark:bg-background-darker">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -100,18 +100,18 @@ export default function Services() {
               whileHover={{ scale: 1.05, y: -10 }}
               className="card-gradient group cursor-pointer"
             >
-              <div className="text-primary-400 mb-4 group-hover:text-primary-300 transition-colors">
+              <div className="text-primary-600 dark:text-primary-400 mb-4 group-hover:text-primary-500 dark:group-hover:text-primary-300 transition-colors">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold font-heading mb-3 group-hover:text-gradient transition-all">
+              <h3 className="text-xl font-bold font-heading mb-3 text-text-primary-light dark:text-text-primary-dark group-hover:text-gradient transition-all">
                 {service.title}
               </h3>
-              <p className="text-gray-400 mb-4 leading-relaxed">
+              <p className="text-text-secondary-light dark:text-text-secondary-dark mb-4 leading-relaxed">
                 {service.description}
               </p>
               <Link
                 href={`/services/${service.slug}`}
-                className="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium transition-colors"
+                className="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300 font-medium transition-colors"
               >
                 Learn more
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

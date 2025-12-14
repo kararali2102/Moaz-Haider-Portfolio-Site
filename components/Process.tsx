@@ -96,7 +96,7 @@ export default function Process() {
   ]
 
   return (
-    <section ref={ref} id="process" className="section-padding bg-dark-950 relative overflow-hidden">
+    <section ref={ref} id="process" className="section-padding bg-background-light dark:bg-background-darker relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl" />
@@ -136,29 +136,29 @@ export default function Process() {
                 <div className={`${index % 2 === 0 ? 'lg:text-right lg:pr-12' : 'lg:col-start-2 lg:pl-12'}`}>
                   <motion.div
                     whileHover={{ scale: 1.02 }}
-                    className="bg-dark-800 border border-dark-700 rounded-xl p-6 hover:border-primary-500/50 transition-all duration-300 group"
+                    className="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl p-6 hover:border-primary-500/50 transition-all duration-300 group"
                   >
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-5xl font-bold font-heading text-gradient opacity-50">
                         {step.number}
                       </span>
-                      <span className="text-sm text-primary-400 bg-primary-500/10 px-3 py-1 rounded-full">
+                      <span className="text-sm text-primary-600 dark:text-primary-400 bg-primary-500/10 px-3 py-1 rounded-full">
                         {step.timeframe}
                       </span>
                     </div>
 
-                    <h3 className="text-2xl font-bold font-heading mb-3 text-white group-hover:text-gradient transition-all">
+                    <h3 className="text-2xl font-bold font-heading mb-3 text-text-primary-light dark:text-text-primary-dark group-hover:text-gradient transition-all">
                       {step.title}
                     </h3>
 
-                    <p className="text-gray-400 mb-4 leading-relaxed">
+                    <p className="text-text-secondary-light dark:text-text-secondary-dark mb-4 leading-relaxed">
                       {step.description}
                     </p>
 
                     <ul className="space-y-2">
                       {step.tasks.map((task, idx) => (
-                        <li key={idx} className="flex items-center space-x-2 text-gray-300 text-sm">
-                          <svg className="w-4 h-4 text-primary-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <li key={idx} className="flex items-center space-x-2 text-text-secondary-light dark:text-text-secondary-dark text-sm">
+                          <svg className="w-4 h-4 text-primary-600 dark:text-primary-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>{task}</span>

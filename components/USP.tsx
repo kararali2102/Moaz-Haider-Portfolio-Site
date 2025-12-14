@@ -66,7 +66,7 @@ export default function USP() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-dark-900">
+    <section ref={ref} className="section-padding bg-background-light dark:bg-background-dark">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -89,15 +89,15 @@ export default function USP() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="bg-dark-800 border border-dark-700 rounded-xl p-6 hover:border-primary-500/50 transition-all duration-300 group"
+              className="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl p-6 hover:border-primary-500/50 transition-all duration-300 group"
             >
-              <div className="w-16 h-16 bg-primary-500/10 rounded-lg flex items-center justify-center mb-4 text-primary-400 group-hover:bg-primary-500/20 group-hover:scale-110 transition-all duration-300">
+              <div className="w-16 h-16 bg-primary-500/10 rounded-lg flex items-center justify-center mb-4 text-primary-600 dark:text-primary-400 group-hover:bg-primary-500/20 group-hover:scale-110 transition-all duration-300">
                 {usp.icon}
               </div>
-              <h3 className="text-xl font-bold font-heading mb-3 text-white group-hover:text-gradient transition-all">
+              <h3 className="text-xl font-bold font-heading mb-3 text-text-primary-light dark:text-text-primary-dark group-hover:text-gradient transition-all">
                 {usp.title}
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
                 {usp.description}
               </p>
             </motion.div>

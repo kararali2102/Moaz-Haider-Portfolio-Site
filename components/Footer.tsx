@@ -77,7 +77,7 @@ export default function Footer() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6">
               Ready to Transform Your <span className="text-gradient">Kitchen Remodel Business?</span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-text-secondary-light dark:text-text-secondary-dark mb-8 max-w-3xl mx-auto">
               Let's discuss how strategic SEO can help you dominate local search, 
               attract high-quality leads, and grow your kitchen remodeling business.
             </p>
@@ -104,7 +104,7 @@ export default function Footer() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-dark-950 border-t border-dark-800">
+      <footer className="bg-surface-light dark:bg-background-darker border-t border-border-light dark:border-border-dark">
         <div className="container-custom py-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
@@ -112,7 +112,7 @@ export default function Footer() {
               <h3 className="text-2xl font-bold font-heading text-gradient mb-4">
                 Moaz Haider
               </h3>
-              <p className="text-gray-400 mb-4 leading-relaxed">
+              <p className="text-text-secondary-light dark:text-text-secondary-dark mb-4 leading-relaxed">
                 Kitchen Remodeling SEO Expert helping businesses increase visibility, 
                 generate quality leads, and grow revenue.
               </p>
@@ -124,7 +124,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -2 }}
-                    className="w-10 h-10 bg-dark-800 hover:bg-primary-500 border border-dark-700 hover:border-primary-500 rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
+                    className="w-10 h-10 bg-surface-light dark:bg-surface-dark hover:bg-primary-500 border border-border-light dark:border-border-dark hover:border-primary-500 rounded-lg flex items-center justify-center text-text-secondary-light dark:text-text-secondary-dark hover:text-white transition-all duration-300"
                     aria-label={social.name}
                   >
                     {social.icon}
@@ -143,7 +143,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
+                      className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
                     >
                       {link.name}
                     </Link>
@@ -154,7 +154,7 @@ export default function Footer() {
 
             {/* Services */}
             <div>
-              <h4 className="text-lg font-bold font-heading text-white mb-4">
+              <h4 className="text-lg font-bold font-heading text-text-primary-light dark:text-text-primary-dark mb-4">
                 Services
               </h4>
               <ul className="space-y-2">
@@ -162,7 +162,7 @@ export default function Footer() {
                   <li key={service.name}>
                     <Link
                       href={service.href}
-                      className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
+                      className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
                     >
                       {service.name}
                     </Link>
@@ -173,10 +173,10 @@ export default function Footer() {
 
             {/* Contact */}
             <div>
-              <h4 className="text-lg font-bold font-heading text-white mb-4">
+              <h4 className="text-lg font-bold font-heading text-text-primary-light dark:text-text-primary-dark mb-4">
                 Contact
               </h4>
-              <ul className="space-y-3 text-gray-400">
+              <ul className="space-y-3 text-text-secondary-light dark:text-text-secondary-dark">
                 <li className="flex items-start space-x-3">
                   <svg className="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

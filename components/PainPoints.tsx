@@ -60,7 +60,7 @@ export default function PainPoints() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-dark-900">
+    <section ref={ref} className="section-padding bg-background-light dark:bg-background-dark">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -84,31 +84,31 @@ export default function PainPoints() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.15 }}
               whileHover={{ y: -10 }}
-              className={`relative bg-gradient-to-br ${point.gradient} rounded-2xl p-8 border border-dark-700 hover:border-primary-500/50 transition-all duration-300 overflow-hidden group`}
+              className={`relative bg-gradient-to-br ${point.gradient} rounded-2xl p-8 border border-border-light dark:border-border-dark hover:border-primary-500/50 transition-all duration-300 overflow-hidden group bg-surface-light dark:bg-surface-dark`}
             >
               {/* Background Decoration */}
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-primary-500/10 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500" />
               
               <div className="relative z-10">
-                <div className="text-primary-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-primary-600 dark:text-primary-400 mb-6 group-hover:scale-110 transition-transform duration-300">
                   {point.icon}
                 </div>
 
-                <h3 className="text-2xl font-bold font-heading mb-3 text-white">
+                <h3 className="text-2xl font-bold font-heading mb-3 text-text-primary-light dark:text-text-primary-dark">
                   {point.title}
                 </h3>
 
-                <p className="text-gray-400 mb-6 leading-relaxed">
+                <p className="text-text-secondary-light dark:text-text-secondary-dark mb-6 leading-relaxed">
                   {point.description}
                 </p>
 
                 <div className="space-y-3 mb-6">
                   {point.solutions.map((solution, idx) => (
                     <div key={idx} className="flex items-start space-x-3">
-                      <svg className="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-5 h-5 text-primary-600 dark:text-primary-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      <span className="text-gray-300 text-sm">{solution}</span>
+                      <span className="text-text-secondary-light dark:text-text-secondary-dark text-sm">{solution}</span>
                     </div>
                   ))}
                 </div>

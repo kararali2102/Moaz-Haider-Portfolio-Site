@@ -57,7 +57,7 @@ export default function TrustMetrics() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-dark-900">
+    <section ref={ref} className="section-padding bg-background-light dark:bg-background-dark">
       <div className="container-custom">
         {/* Metrics Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -70,13 +70,13 @@ export default function TrustMetrics() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="card-gradient text-center group"
             >
-              <div className="flex justify-center mb-4 text-primary-400 group-hover:text-primary-300 transition-colors">
+              <div className="flex justify-center mb-4 text-primary-600 dark:text-primary-400 group-hover:text-primary-500 dark:group-hover:text-primary-300 transition-colors">
                 {metric.icon}
               </div>
               <div className="text-4xl font-bold font-heading text-gradient mb-2">
                 {metric.value}
               </div>
-              <div className="text-gray-400 text-sm">{metric.label}</div>
+              <div className="text-text-secondary-light dark:text-text-secondary-dark text-sm">{metric.label}</div>
             </motion.div>
           ))}
         </div>

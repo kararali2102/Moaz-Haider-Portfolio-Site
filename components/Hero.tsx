@@ -25,7 +25,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-surface-light via-background-light to-surface-light dark:from-surface-darker dark:via-background-dark dark:to-surface-darker overflow-hidden pt-20">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -73,7 +73,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-primary-500"></span>
               </span>
-              <span className="text-sm font-medium text-primary-400">
+              <span className="text-sm font-medium text-primary-600 dark:text-primary-400">
                 Available for New Kitchen Remodel Projects
               </span>
             </motion.div>
@@ -170,7 +170,7 @@ export default function Hero() {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <motion.div whileFocus={{ scale: 1.02 }}>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2">
                   Full Name *
                 </label>
                 <input
@@ -180,13 +180,13 @@ export default function Hero() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-dark-900 border border-dark-600 rounded-lg text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 bg-surface-light dark:bg-surface-darker border border-border-light dark:border-border-dark rounded-lg text-text-primary-light dark:text-text-primary-dark placeholder-text-muted-light dark:placeholder-text-muted-dark focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                   placeholder="John Smith"
                 />
               </motion.div>
 
               <motion.div whileFocus={{ scale: 1.02 }}>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2">
                   Email Address *
                 </label>
                 <input
@@ -196,13 +196,13 @@ export default function Hero() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-dark-900 border border-dark-600 rounded-lg text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 bg-surface-light dark:bg-surface-darker border border-border-light dark:border-border-dark rounded-lg text-text-primary-light dark:text-text-primary-dark placeholder-text-muted-light dark:placeholder-text-muted-dark focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                   placeholder="john@kitchenremodel.com"
                 />
               </motion.div>
 
               <motion.div whileFocus={{ scale: 1.02 }}>
-                <label htmlFor="website" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="website" className="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2">
                   Company Website *
                 </label>
                 <input
@@ -212,13 +212,13 @@ export default function Hero() {
                   required
                   value={formData.website}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-dark-900 border border-dark-600 rounded-lg text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 bg-surface-light dark:bg-surface-darker border border-border-light dark:border-border-dark rounded-lg text-text-primary-light dark:text-text-primary-dark placeholder-text-muted-light dark:placeholder-text-muted-dark focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                   placeholder="https://yourwebsite.com"
                 />
               </motion.div>
 
               <motion.div whileFocus={{ scale: 1.02 }}>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="phone" className="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2">
                   Phone Number *
                 </label>
                 <input
@@ -228,7 +228,7 @@ export default function Hero() {
                   required
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-dark-900 border border-dark-600 rounded-lg text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 bg-surface-light dark:bg-surface-darker border border-border-light dark:border-border-dark rounded-lg text-text-primary-light dark:text-text-primary-dark placeholder-text-muted-light dark:placeholder-text-muted-dark focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                   placeholder="+1 (555) 123-4567"
                 />
               </motion.div>

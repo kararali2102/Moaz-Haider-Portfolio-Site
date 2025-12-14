@@ -69,7 +69,7 @@ export default function FAQ() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       
-      <section ref={ref} className="section-padding bg-dark-900">
+      <section ref={ref} className="section-padding bg-background-light dark:bg-background-dark">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -96,14 +96,14 @@ export default function FAQ() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.05 }}
-                className="bg-dark-800 border border-dark-700 rounded-xl overflow-hidden hover:border-primary-500/50 transition-all duration-300"
+                className="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:border-primary-500/50 transition-all duration-300"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex items-center justify-between p-6 text-left hover:bg-dark-700/50 transition-colors duration-200"
+                  className="w-full flex items-center justify-between p-6 text-left hover:bg-background-light dark:hover:bg-surface-darker/50 transition-colors duration-200"
                   aria-expanded={activeIndex === index}
                 >
-                  <span className="text-lg font-semibold text-white pr-4">
+                  <span className="text-lg font-semibold text-text-primary-light dark:text-text-primary-dark pr-4">
                     {faq.question}
                   </span>
                   <motion.div
@@ -112,7 +112,7 @@ export default function FAQ() {
                     className="flex-shrink-0"
                   >
                     <svg
-                      className="w-6 h-6 text-primary-400"
+                      className="w-6 h-6 text-primary-600 dark:text-primary-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -136,7 +136,7 @@ export default function FAQ() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 text-gray-400 leading-relaxed">
+                      <div className="px-6 pb-6 text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
                         {faq.answer}
                       </div>
                     </motion.div>

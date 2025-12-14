@@ -42,7 +42,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-dark-900/95 backdrop-blur-lg shadow-xl' : 'bg-transparent'
+        isScrolled ? 'bg-surface-dark/95 dark:bg-surface-darker/95 backdrop-blur-lg shadow-xl' : 'bg-transparent'
       }`}
     >
       <nav className="container-custom">
@@ -61,7 +61,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-gray-300 hover:text-primary-400 transition-colors duration-200 font-medium"
+              className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
             >
               Home
             </Link>
@@ -72,7 +72,7 @@ export default function Header() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="text-gray-300 hover:text-primary-400 transition-colors duration-200 font-medium flex items-center">
+              <button className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium flex items-center">
                 Services
                 <svg
                   className={`ml-1 w-4 h-4 transition-transform ${
@@ -93,13 +93,13 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 w-64 bg-dark-800 rounded-lg shadow-2xl border border-dark-700 overflow-hidden"
+                    className="absolute top-full left-0 mt-2 w-64 bg-surface-light dark:bg-surface-dark rounded-lg shadow-2xl border border-border-light dark:border-border-dark overflow-hidden"
                   >
                     {services.map((service) => (
                       <Link
                         key={service.name}
                         href={service.href}
-                        className="block px-4 py-3 text-gray-300 hover:bg-dark-700 hover:text-primary-400 transition-colors duration-200"
+                        className="block px-4 py-3 text-text-secondary-light dark:text-text-secondary-dark hover:bg-background-light dark:hover:bg-surface-darker hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
                       >
                         {service.name}
                       </Link>
@@ -115,7 +115,7 @@ export default function Header() {
               onMouseEnter={() => setCmsOpen(true)}
               onMouseLeave={() => setCmsOpen(false)}
             >
-              <button className="text-gray-300 hover:text-primary-400 transition-colors duration-200 font-medium flex items-center">
+              <button className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium flex items-center">
                 CMS
                 <svg
                   className={`ml-1 w-4 h-4 transition-transform ${
@@ -136,13 +136,13 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 w-56 bg-dark-800 rounded-lg shadow-2xl border border-dark-700 overflow-hidden"
+                    className="absolute top-full left-0 mt-2 w-56 bg-surface-light dark:bg-surface-dark rounded-lg shadow-2xl border border-border-light dark:border-border-dark overflow-hidden"
                   >
                     {cmsPlatforms.map((platform) => (
                       <Link
                         key={platform.name}
                         href={platform.href}
-                        className="block px-4 py-3 text-gray-300 hover:bg-dark-700 hover:text-primary-400 transition-colors duration-200"
+                        className="block px-4 py-3 text-text-secondary-light dark:text-text-secondary-dark hover:bg-background-light dark:hover:bg-surface-darker hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
                       >
                         {platform.name}
                       </Link>
@@ -154,21 +154,21 @@ export default function Header() {
 
             <Link
               href="/about"
-              className="text-gray-300 hover:text-primary-400 transition-colors duration-200 font-medium"
+              className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
             >
               About
             </Link>
 
             <Link
               href="/case-studies"
-              className="text-gray-300 hover:text-primary-400 transition-colors duration-200 font-medium"
+              className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
             >
               Case Studies
             </Link>
 
             <Link
               href="/contact"
-              className="text-gray-300 hover:text-primary-400 transition-colors duration-200 font-medium"
+              className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
             >
               Contact
             </Link>

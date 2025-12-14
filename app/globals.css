@@ -31,7 +31,7 @@
   }
   
   .card-gradient {
-    @apply bg-surface-dark dark:bg-surface-darker rounded-xl p-6 shadow-xl border border-border-dark dark:border-border-darker hover:border-primary-500/50 dark:hover:border-primary-400/50 transition-all duration-300;
+    @apply bg-surface-light dark:bg-surface-darker rounded-xl p-6 shadow-xl border border-border-light dark:border-border-dark hover:border-primary-500/50 dark:hover:border-primary-400/50 transition-all duration-300;
   }
   
   .section-padding {

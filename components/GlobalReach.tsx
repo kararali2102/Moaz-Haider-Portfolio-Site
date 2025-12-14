@@ -48,7 +48,7 @@ export default function GlobalReach() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-dark-950">
+    <section ref={ref} className="section-padding bg-background-light dark:bg-background-darker">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -76,7 +76,7 @@ export default function GlobalReach() {
               <div className="text-4xl md:text-5xl font-bold font-heading text-gradient mb-2">
                 {stat.value}
               </div>
-              <div className="text-gray-400">{stat.label}</div>
+              <div className="text-text-secondary-light dark:text-text-secondary-dark">{stat.label}</div>
             </motion.div>
           ))}
         </div>
@@ -103,7 +103,7 @@ export default function GlobalReach() {
                 className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                   activeRegion === region.country
                     ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/50'
-                    : 'bg-dark-700 text-gray-400 hover:bg-dark-600'
+                    : 'bg-surface-light dark:bg-surface-darker text-text-secondary-light dark:text-text-secondary-dark hover:bg-surface-dark dark:hover:bg-surface-dark'
                 }`}
               >
                 {region.country}
