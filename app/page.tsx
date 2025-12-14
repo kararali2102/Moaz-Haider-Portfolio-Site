@@ -10,6 +10,7 @@ import GlobalReach from '@/components/GlobalReach'
 import Testimonials from '@/components/Testimonials'
 import Comparison from '@/components/Comparison'
 import FAQ from '@/components/FAQ'
+import StickyCTA from '@/components/StickyCTA'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Testimonials />
       <Comparison />
       <FAQ />
+      <StickyCTA />
     </>
   )
 }

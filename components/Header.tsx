@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import ThemeToggle from './ThemeToggle'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -173,19 +174,23 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* CTA Button */}
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link href="#contact" className="btn-primary hidden lg:inline-block">
-              Get Free Kitchen Remodel SEO Audit
-            </Link>
-          </motion.div>
+          {/* Right Side: Theme Toggle + CTA */}
+          <div className="flex items-center space-x-4">
+            <ThemeToggle />
+            
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link href="#contact" className="btn-primary hidden lg:inline-block">
+                Get Free SEO Audit
+              </Link>
+            </motion.div>
 
-          {/* Mobile Menu Button */}
-          <button className="lg:hidden text-gray-300 hover:text-primary-400">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+            {/* Mobile Menu Button */}
+            <button className="lg:hidden text-gray-300 hover:text-primary-400">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
         </div>
       </nav>
     </motion.header>

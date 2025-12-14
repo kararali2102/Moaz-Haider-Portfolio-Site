@@ -83,10 +83,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-text-primary-light dark:text-text-primary-dark"
             >
               Kitchen Remodeling SEO Services{' '}
-              <span className="text-gradient">That Drive Real Results</span>
+              <span className="text-gradient">That Generate Quality Leads</span>
             </motion.h1>
 
             {/* Subheadline */}
@@ -94,11 +94,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed"
+              className="text-lg md:text-xl text-text-secondary-light dark:text-text-secondary-dark mb-8 leading-relaxed"
             >
-              Transform your kitchen remodeling business with expert SEO strategies. 
-              Increase local visibility, generate high-quality leads, and boost revenue 
-              with proven SEO techniques tailored specifically for kitchen remodelers.
+              Expert SEO for kitchen remodeling contractors, designers, and renovation companies. 
+              Dominate local search, attract high-intent homeowners planning kitchen renovations, 
+              and grow your custom kitchen design business with proven SEO strategies.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -159,12 +159,12 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-dark-800/50 backdrop-blur-lg rounded-2xl p-8 border border-dark-700 shadow-2xl"
+            className="bg-surface-dark/50 dark:bg-surface-darker/50 backdrop-blur-lg rounded-2xl p-8 border border-border-dark dark:border-border-darker shadow-2xl"
           >
-            <h3 className="text-2xl font-bold font-heading mb-2">
+            <h3 className="text-2xl font-bold font-heading mb-2 text-text-primary-light dark:text-text-primary-dark">
               Get Your Free SEO Audit
             </h3>
-            <p className="text-gray-400 mb-6">
+            <p className="text-text-secondary-light dark:text-text-secondary-dark mb-6">
               Discover how to rank higher and get more kitchen remodel leads
             </p>
 
