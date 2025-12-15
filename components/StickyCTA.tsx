@@ -39,7 +39,7 @@ export default function StickyCTA() {
               </div>
               <div className="flex items-center gap-3">
                 <motion.a
-                  href="tel:+1234567890"
+                  href="tel:+923024698992"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-primary-50 transition-colors duration-200 whitespace-nowrap"
