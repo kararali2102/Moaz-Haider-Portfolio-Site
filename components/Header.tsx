@@ -42,7 +42,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-surface-dark/95 dark:bg-surface-darker/95 backdrop-blur-lg shadow-xl' : 'bg-transparent'
+        isScrolled ? 'bg-white/95 dark:bg-surface-darker/95 backdrop-blur-lg shadow-lg border-b border-gray-200/50 dark:border-gray-800/50' : 'bg-transparent'
       }`}
     >
       <nav className="container-custom">
@@ -61,7 +61,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-semibold"
             >
               Home
             </Link>
@@ -72,7 +72,7 @@ export default function Header() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium flex items-center">
+              <button className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-semibold flex items-center">
                 Services
                 <svg
                   className={`ml-1 w-4 h-4 transition-transform ${
@@ -93,7 +93,7 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 w-64 bg-surface-light dark:bg-surface-dark rounded-lg shadow-2xl border border-border-light dark:border-border-dark overflow-hidden"
+                    className="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-surface-dark rounded-xl shadow-2xl border border-gray-200 dark:border-border-dark overflow-hidden"
                   >
                     {services.map((service) => (
                       <Link
@@ -115,7 +115,7 @@ export default function Header() {
               onMouseEnter={() => setCmsOpen(true)}
               onMouseLeave={() => setCmsOpen(false)}
             >
-              <button className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium flex items-center">
+              <button className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-semibold flex items-center">
                 CMS
                 <svg
                   className={`ml-1 w-4 h-4 transition-transform ${
@@ -136,7 +136,7 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 w-56 bg-surface-light dark:bg-surface-dark rounded-lg shadow-2xl border border-border-light dark:border-border-dark overflow-hidden"
+                    className="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-surface-dark rounded-xl shadow-2xl border border-gray-200 dark:border-border-dark overflow-hidden"
                   >
                     {cmsPlatforms.map((platform) => (
                       <Link
@@ -154,21 +154,21 @@ export default function Header() {
 
             <Link
               href="/about"
-              className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-semibold"
             >
               About
             </Link>
 
             <Link
               href="/case-studies"
-              className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-semibold"
             >
               Case Studies
             </Link>
 
             <Link
               href="/contact"
-              className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-semibold"
             >
               Contact
             </Link>

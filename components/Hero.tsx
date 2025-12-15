@@ -25,32 +25,32 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-surface-light via-background-light to-surface-light dark:from-surface-darker dark:via-background-dark dark:to-surface-darker overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-surface-darker dark:via-background-dark dark:to-surface-darker overflow-hidden pt-20">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
+            opacity: [0.15, 0.25, 0.15],
           }}
           transition={{
             duration: 8,
             repeat: Infinity,
             ease: 'easeInOut',
           }}
-          className="absolute -top-1/2 -right-1/2 w-full h-full bg-primary-500/10 rounded-full blur-3xl"
+          className="absolute -top-1/2 -right-1/2 w-full h-full bg-primary-500/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
             scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.4, 0.2],
+            opacity: [0.1, 0.2, 0.1],
           }}
           transition={{
             duration: 10,
             repeat: Infinity,
             ease: 'easeInOut',
           }}
-          className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-accent-500/10 rounded-full blur-3xl"
+          className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-accent-500/20 rounded-full blur-3xl"
         />
       </div>
 
@@ -67,13 +67,13 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center space-x-2 bg-primary-500/10 border border-primary-500/30 rounded-full px-4 py-2 mb-6"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-400/30 rounded-full px-5 py-2.5 mb-8"
             >
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-primary-500"></span>
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-500"></span>
               </span>
-              <span className="text-sm font-medium text-primary-600 dark:text-primary-400">
+              <span className="text-sm font-semibold text-gray-800 dark:text-primary-300">
                 Available for New Kitchen Remodel Projects
               </span>
             </motion.div>
@@ -83,7 +83,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-text-primary-light dark:text-text-primary-dark"
+              className="text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading mb-8 leading-tight text-gray-900 dark:text-white"
             >
               Kitchen Remodeling SEO Services{' '}
               <span className="text-gradient">That Generate Quality Leads</span>
@@ -94,7 +94,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg md:text-xl text-text-secondary-light dark:text-text-secondary-dark mb-8 leading-relaxed"
+              className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-10 leading-relaxed font-medium"
             >
               Expert SEO for kitchen remodeling contractors, designers, and renovation companies. 
               Dominate local search, attract high-intent homeowners planning kitchen renovations, 

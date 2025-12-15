@@ -58,19 +58,19 @@ const config: Config = {
           dark: '#334155',
           darker: '#1e293b',
         },
-        // Text Colors
+        // Text Colors - Improved contrast
         text: {
           primary: {
             light: '#0f172a',
-            dark: '#f8fafc',
+            dark: '#ffffff',
           },
           secondary: {
-            light: '#475569',
-            dark: '#cbd5e1',
+            light: '#334155',
+            dark: '#e2e8f0',
           },
           muted: {
-            light: '#64748b',
-            dark: '#94a3b8',
+            light: '#475569',
+            dark: '#cbd5e1',
           },
         },
       },
