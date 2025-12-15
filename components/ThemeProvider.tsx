@@ -48,11 +48,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       : 'font-sans antialiased bg-background-light text-text-primary-light transition-colors duration-300'
   }
 
-  // Prevent flash of unstyled content
-  if (!mounted) {
-    return <>{children}</>
-  }
-
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
