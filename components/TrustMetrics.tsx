@@ -57,7 +57,7 @@ export default function TrustMetrics() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-background-light dark:bg-background-dark">
+    <section ref={ref} className="section-padding bg-white dark:bg-background-dark">
       <div className="container-custom">
         {/* Metrics Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

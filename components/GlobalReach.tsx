@@ -48,7 +48,7 @@ export default function GlobalReach() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-background-light dark:bg-background-darker">
+    <section ref={ref} className="section-padding bg-white dark:bg-background-darker">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -41,7 +41,7 @@ export default function IndustryFocus() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-background-light dark:bg-background-dark">
+    <section ref={ref} className="section-padding bg-gray-50 dark:bg-background-dark">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

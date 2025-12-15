@@ -15,7 +15,7 @@ export default function CaseStudy() {
   ]
 
   return (
-    <section ref={ref} className="section-padding bg-background-light dark:bg-background-darker relative overflow-hidden">
+    <section ref={ref} className="section-padding bg-white dark:bg-background-darker relative overflow-hidden">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-r from-dark-950 via-transparent to-dark-950" />

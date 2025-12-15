@@ -96,7 +96,7 @@ export default function Process() {
   ]
 
   return (
-    <section ref={ref} id="process" className="section-padding bg-background-light dark:bg-background-darker relative overflow-hidden">
+    <section ref={ref} id="process" className="section-padding bg-white dark:bg-background-darker relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl" />
